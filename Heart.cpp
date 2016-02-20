@@ -12,14 +12,10 @@ int main()
     double scaleMin, errorMin = DBL_MAX;
     Model  modelMin;
 
-    //for (double scale = 0.027; scale < 0.032; scale += 0.001) 
+    //double scale = -0.05; int i = 16; int j = 16; {
     for (double scale = -0.06; scale < -0.04; scale += 0.001) 
       for (int i = 14; i < 20; ++i)
         for (int j = 14; j < 20; ++j) {
-        //{ double scale = 0.028; 
-        //  int    i    = 16;
-        //  int    j    = 16;
-
           Model    model (PatternVector("E:\\Heart\\train\\", 1, 500), LabelVector("E:\\Heart\\train.csv"), array<int, 2>{i, j});
           double   error = model
             .predict        (PatternVector("E:\\Heart\\train\\", 1, 500))
