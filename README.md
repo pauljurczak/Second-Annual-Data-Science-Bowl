@@ -12,5 +12,3 @@ This is a Visual Studio 2015 C++ project to produce submission to Second Annual 
 - male adult median systole: 	75
 - male adult median diastole: 	181
 - male adult age: 		16
-- error:	0.0379411
-- scale:	-0.05
